@@ -4,7 +4,7 @@ from .models import Trip
 from .serializers import TripSerializer, TripAvaliator
 
 
-class TripList(generics.ListCreateAPIView):
+class TripList(generics.ListAPIView):
     queryset = Trip.objects.all()
     serializer_class = TripSerializer
 
